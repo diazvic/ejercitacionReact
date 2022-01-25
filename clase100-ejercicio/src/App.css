@@ -1,0 +1,13 @@
+.rojo {
+	background-color: red;
+}
+.azul {
+	background-color: blue;
+}
+div {
+	width: 200px;
+	height: 300px;
+}
+button {
+	margin: 10px;
+}
