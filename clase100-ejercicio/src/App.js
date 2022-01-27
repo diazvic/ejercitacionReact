@@ -2,23 +2,18 @@ import "./App.css";
 import { useState } from "react";
 const App = () => {
 	const [color, setColor] = useState("rojo");
-
-	const handleClickCambiarDeColor = () => {
-		setColor("azul");
-	};
+	const [mensajeDelBoton, setMensajeDelBoton] = useState("Poner fondo azul");
 
 	const handleClickCambiarARojo = () => {
-		setColor("rojo");
+		color === "rojo" ? setColor("azul") : setColor("rojo");
+		mensajeDelBoton === "Poner fondo rojo"
+			? setMensajeDelBoton("Poner fondo azul")
+			: setMensajeDelBoton("Poner fondo rojo");
 	};
 
-	const handleClickCambiarAAzul = () => {
-		setColor("azul");
-	};
 	return (
 		<div className={color}>
-			<button onClick={handleClickCambiarDeColor}>Poner el fondo azul</button>
-			<button onClick={handleClickCambiarARojo}>Fondo rojo</button>
-			<button onClick={handleClickCambiarAAzul}>Fondo azul</button>
+			<button onClick={handleClickCambiarARojo}>{mensajeDelBoton}</button>
 		</div>
 	);
 };
