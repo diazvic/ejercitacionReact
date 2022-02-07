@@ -8,60 +8,10 @@ import Stack from "@mui/material/Stack";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+
 const App = () => {
 	return (
-		// <Grid container spacing={2}>
-		// 	<Grid item xs={12} sm={6}>
-		// 		<TextField
-		// 			autoComplete="given-name"
-		// 			name="firstName"
-		// 			required
-		// 			fullWidth
-		// 			id="firstName"
-		// 			label="First Name"
-		// 			autoFocus
-		// 		/>
-		// 	</Grid>
-		// 	<Grid item xs={12} sm={6}>
-		// 		<TextField
-		// 			required
-		// 			fullWidth
-		// 			id="lastName"
-		// 			label="Last Name"
-		// 			name="lastName"
-		// 			autoComplete="family-name"
-		// 		/>
-		// 	</Grid>
-		// 	<Grid item xs={12}>
-		// 		<TextField
-		// 			required
-		// 			fullWidth
-		// 			id="email"
-		// 			label="Email Address"
-		// 			name="email"
-		// 			autoComplete="email"
-		// 		/>
-		// 	</Grid>
-		// 	<Grid item xs={12}>
-		// 		<TextField
-		// 			required
-		// 			fullWidth
-		// 			name="password"
-		// 			label="Password"
-		// 			type="password"
-		// 			id="password"
-		// 			autoComplete="new-password"
-		// 		/>
-		// 	</Grid>
-		// 	<Grid item xs={12}>
-		// 		<FormControlLabel
-		// 			control={<Checkbox value="allowExtraEmails" color="primary" />}
-		// 			label="I want to receive inspiration, marketing promotions and updates via email."
-		// 		/>
-		// 	</Grid>
-		// </Grid>
-
 		<Box
 			component="form"
 			sx={{
@@ -90,14 +40,6 @@ const App = () => {
 			<CardActions
 				sx={{ width: 400, display: "flex", flexDirection: "column" }}
 			>
-				{/* <Stack direction="row" spacing={1}>
-					<Checkbox></Checkbox>
-					<Typography>
-						I want to receive inspiration, marketing promotions and updates via
-						email.
-					</Typography>
-				</Stack> */}
-
 				<FormControlLabel
 					control={
 						<Checkbox sx={{ mr: 1 }} value="allowExtraEmails" color="primary" />
@@ -107,6 +49,14 @@ const App = () => {
 				<Button fullWidth sx={{ mt: 2, p: 1 }} variant="contained">
 					SIGN UP
 				</Button>
+
+				<Link sx={{ mt: 2, ml: 22 }} href="#" variant="body2">
+					Already have an account? Sign in
+				</Link>
+
+				<Typography sx={{ color: "text.secondary", mt: 5 }} variant="body2">
+					Copyright © <Link color="inherit">Your Website</Link> 2022.
+				</Typography>
 			</CardActions>
 		</Box>
 	);
