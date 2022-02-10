@@ -5,7 +5,8 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
-
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 const App = () => {
 	return (
 		<div>
@@ -70,6 +71,8 @@ const App = () => {
 					</Typography>
 				</Box>
 			</Container>
+			<Cards />
+			<Footer />
 		</div>
 	);
 };
