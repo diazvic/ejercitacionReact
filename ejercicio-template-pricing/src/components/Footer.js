@@ -118,7 +118,7 @@ const Footer = () => {
 				</Grid>
 			</Box>
 
-			<CardActions sx={{ display: "flex", justifyContent: "center" }}>
+			<CardActions sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
 				<Typography sx={{ color: "text.secondary", mt: 5 }} variant="body2">
 					Copyright ©{" "}
 					<Link color="primary.main" underline="none" fontWeight="bold">
